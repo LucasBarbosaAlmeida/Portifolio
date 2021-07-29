@@ -27,33 +27,38 @@
             <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
             <div class="nav-menu-inner">
                 <ul>
-                    <li><a href="#" class="inner-shadow active">Home</a></li>
-                    <li><a href="#" class="outer-shadow hover-in-shadow">Portifólio</a></li>
-                    <li><a href="#" class="outer-shadow hover-in-shadow">Sobre Mim</a></li>
-                    <li><a href="#" class="outer-shadow hover-in-shadow">Contato</a></li>
+                    <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+                    <li><a href="#about" class="link-item outer-shadow hover-in-shadow">Sobre Mim</a></li>
+                    <li><a href="#services" class="link-item outer-shadow hover-in-shadow">Serviços</a></li>
+                    <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portifólio</a></li>
+                    <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contato</a></li>
                 </ul>
             </div>
         </nav>
+
+        <div class="fade-out-effect">
+        </div>
+
         <!-- Home -->
-        <section class="home-section section">
+        <section class="home-section section active" id="home">
             <div class="container">
                 <div class="row full-screen algin-items-center">
                     <div class="home-text">
                         <p>Hello World!</p>
                         <h2>Lucas Barbosa de Almeida</h2>
                         <h1>React Native Developer Jr</h1>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">Mais Sobre Mim</a>
+                        <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">Mais Sobre Mim</a>
                     </div>
                     <div class="home-img">
                         <div class="img-box inner-shadow">
-                            <img src="img/profile.jpg" class="outer-shadow" alt="profile-pic">
+                            <img src="img/profile.jpeg" class="outer-shadow" alt="profile-pic">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About Me -->
-        <section class="about-section section">
+        <section class="about-section section hide" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -63,7 +68,7 @@
                 <div class="row">
                     <div class="about-img">
                         <div class="img-box inner-shadow">
-                            <img src="img/profile.jpg" class="outer-shadow" alt="profile-pic">
+                            <img src="img/profile.jpeg" class="outer-shadow" alt="profile-pic">
                         </div>
                         <!-- Social Link -->
                         <div class="social-links">
@@ -79,7 +84,7 @@
                               para quem me contratar e vir a somar mais conhecimentos e
                                aprendizados a minha carreira profissional.</p>
                         <a href="Curriculo_ReactNative-Lucas.pdf" class="btn-1 outer-shadow hover-in-shadow" target="_blank">Download CV</a>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow" target="_blank">Entre em Contato</a>
+                        <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow" target="_blank">Entre em Contato</a>
                     </div>
                 </div>
 
@@ -231,7 +236,7 @@
         </section>
         
         <!-- Service section -->
-        <section class="service-section section">
+        <section class="service-section section hide" id="services">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -280,7 +285,7 @@
         </section>
         
         <!-- Portifolio section -->
-        <section class="portfolio-section section">
+        <section class="portfolio-section section hide" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -302,7 +307,7 @@
                     <div class="portfolio-item" data-category="web-aplication">
                         <div class="portfolio-item-inner outer-shadow">
                             <div class="portfolio-item-img">
-                                <img src="/img/profile2.jpg" alt="portifolio" data->
+                                <img src="/img/Portifolio.jpeg" alt="portifolio" data->
                             </div>
                             <p class="portfolio-item-title">Portifolio Pessoal</p>
                         </div>
@@ -311,7 +316,7 @@
                     <div class="portfolio-item" data-category="react-native-aplication">
                         <div class="portfolio-item-inner outer-shadow">
                             <div class="portfolio-item-img">
-                                <img src="/img/profile2.jpg" alt="portifolio">
+                                <img src="/img/logomarca.png" alt="portifolio">
                             </div>
                             <p class="portfolio-item-title">Premier-Jet</p>
                         </div>
@@ -320,7 +325,7 @@
                     <div class="portfolio-item" data-category="react-native-aplication">
                         <div class="portfolio-item-inner outer-shadow">
                             <div class="portfolio-item-img">
-                                <img src="/img/profile2.jpg" alt="portifolio">
+                                <img src="/img/Backpackers2.png" alt="portifolio">
                             </div>
                             <p class="portfolio-item-title">BackPackers</p>
                         </div>
@@ -329,7 +334,7 @@
                     <div class="portfolio-item" data-category="react-native-aplication">
                         <div class="portfolio-item-inner outer-shadow">
                             <div class="portfolio-item-img">
-                                <img src="/img/profile2.jpg" alt="portifolio">
+                                <img src="/img/IMC.jpeg" alt="portifolio">
                             </div>
                             <p class="portfolio-item-title">IMC</p>
 
@@ -339,12 +344,79 @@
                     <div class="portfolio-item" data-category="react-native-aplication">
                         <div class="portfolio-item-inner outer-shadow">
                             <div class="portfolio-item-img">
-                                <img src="/img/profile2.jpg" alt="portifolio">
+                                <img src="/img/Tesla_app.jpeg" alt="portifolio">
                             </div>
                             <p class="portfolio-item-title">Tesla Interface</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact-section section hide" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="Contato">Entrar em Contato</h2>
+                    </div>
+                </div>
+                <div class="row">
+                   <!-- Contact item -->
+                   <div class="contact-item">
+                       <div class="contact-item-inner outer-shadow">
+                           <i class="fas fa-phone"></i>
+                           <span>Telefone</span>
+                           <p>+55 (61) 99669-0110</p>
+                       </div>
+                   </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <p>lucas.barbosa.almeida9@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-map-pin"></i>
+                        <span>Endereço</span>
+                        <p>Brasília - DF / Ccsw 01 Lote 03 Bloco 02</p>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="contact-form">
+                        <form action="https://formsubmit.co/lucas.barbosa.almeida9@gmail.com" method="POST">
+                            <div class="row">
+                                <div class="w-50">
+                                    <div class="input-group outer-shadow hover-in-shadow">
+                                        <input type="text" placeholder="Nome" class="input-control" required>
+                                    </div>
+                                    <div class="input-group outer-shadow hover-in-shadow">
+                                        <input type="text" placeholder="Email" class="input-control" required>
+                                    </div>
+                                </div>
+                                <div class="w-50">
+                                    <div class="input-group outer-shadow hover-in-shadow">
+                                        <textarea class="input-control" placeholder="Mensagem" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="submit-btn">
+                                <input type="hidden" name="_next" value="#home">
+                                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Enviar</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </section>
 
